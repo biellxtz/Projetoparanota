@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grau Arte</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Grau Arte - início">
+        <span class="brand-icon">🚲</span>
+        <span class="brand-text">Grau <strong>Arte</strong></span>
+      </a>
+
+      <nav class="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#dicas">Dicas</a>
+        <a href="#loja" class="btn btn-primary">Comprar</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Grau Arte</h1>
+        <p>Estilo, equilíbrio e muita atitude nas duas rodas.</p>
+        <div class="hero-actions">
+          <a href="#loja" class="btn btn-primary">Comprar agora</a>
+          <a href="#sobre" class="btn btn-ghost">Saber mais</a>
+        </div>
+      </div>
+
+      <figure class="hero-figure">
+        <!-- Troque o src pela sua imagem: /img/biker.png -->
+        <img src="img/biker.png" alt="Ciclista empinando a bike (grau)" />
+        <figcaption>Arte sobre o grau – faça do seu jeito.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="section">
+    <div class="container">
+      <h2>Sobre</h2>
+      <p class="lead">
+        Andar de bike é bom demais — é cansativo e ao mesmo tempo libertador. Tem hora que dá tudo certo, tem hora que sai tudo errado… faz parte do rolê e da evolução.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Vibe do Pedal</h3>
+          <p>“Andar de bike é bom, mas cansativo ao mesmo tempo. Tem hora que sai tudo errado.”</p>
+        </article>
+
+        <article class="card">
+          <h3>Quando a bike estraga…</h3>
+          <p>“Bike quando estraga dá um ódio — a vontade é jogar bem longe 😅.”</p>
+        </article>
+
+        <article class="card">
+          <h3>Persistência</h3>
+          <p>Treino, paciência e segurança sempre. Capacete e luvas não são opção, são base!</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dicas -->
+  <section id="dicas" class="section section-alt">
+    <div class="container">
+      <h2>Dicas rápidas</h2>
+      <ul class="tips">
+        <li>Comece em local amplo e plano.</li>
+        <li>Abaixe o banco para ter mais controle no grau.</li>
+        <li>Use proteção: capacete, luvas e joelheiras.</li>
+        <li>Ajuste freio traseiro — ele é seu melhor amigo no equilíbrio.</li>
+        <li>Respeite o trânsito e pratique em áreas seguras.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Loja / Comprar -->
+  <section id="loja" class="section">
+    <div class="container">
+      <h2>Comprar</h2>
+      <p class="lead">Camisetas e adesivos “Grau Arte”. Qualidade top para o rolê.</p>
+
+      <div class="shop-grid">
+        <article class="product">
+          <img src="img/camiseta-grau.png" alt="Camiseta Grau Arte" />
+          <h3>Camiseta Grau Arte</h3>
+          <p>Malha 100% algodão, estampa durável.</p>
+          <div class="price">R$ 59,90</div>
+          <a class="btn btn-primary" href="https://wa.me/000000000000?text=Quero%20Camiseta%20Grau%20Arte" target="_blank" rel="noopener">Pedir no WhatsApp</a>
+        </article>
+
+        <article class="product">
+          <img src="img/adesivo-bike.png" alt="Adesivo Bike" />
+          <h3>Adesivo Bike</h3>
+          <p>Vinil resistente, perfeito para o quadro ou capacete.</p>
+          <div class="price">R$ 9,90</div>
+          <a class="btn btn-primary" href="https://wa.me/000000000000?text=Quero%20Adesivo%20Bike" target="_blank" rel="noopener">Pedir no WhatsApp</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> Grau Arte — feito com ❤️ e muitas pedaladas.</p>
+      <a href="#home" class="to-top" aria-label="Voltar ao topo">↑ Topo</a>
+    </div>
+  </footer>
+
+  <script>
+    // ano automático no rodapé
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
